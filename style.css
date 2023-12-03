@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-image: url(Stopwatch.gif);
+    background-size: contain;
+}
+
+#header{
+    background-color:#ADE68C;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+    font-family: url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nova+Square&display=swap');
+}
+.container{
+    background-color:seagreen;
+    width: 40%;
+    min-width: 400px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 0;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.timer-Display{
+    width: 100%;
+    background:#e8c25c ;
+    padding: 40px 0;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+                rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+                rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+                rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+                rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.laps{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.buttons{
+    width: 70%;
+    margin: 50px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.buttons button{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #141313;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 450;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.buttons button:hover{
+    background-color:peru ;
+    color: #ffffff;
+    border: 3px solid #b6b6b6;
+    padding: 7px 17px;
+    
+} 
+
